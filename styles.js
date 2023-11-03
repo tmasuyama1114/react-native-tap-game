@@ -30,7 +30,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 10,
-    opacity: 0.9,
+    opacity: 0.85,
     borderRadius: 15,
   },
   buttonText: {

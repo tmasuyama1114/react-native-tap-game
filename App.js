@@ -47,7 +47,7 @@ export default function App() {
       setOptions(generateOptions(newCorrectAnswer));
     } else {
       // 正解でない場合はアラートを表示し、スコアを0に戻す
-      Alert.alert("Wrong! Your score is " + score + ".\nTap OK to play again", null, [
+      Alert.alert("Wrong! Your score is " + score + ".\nTap OK to play again.", null, [
         {
           text: 'OK',
           onPress: () => {
