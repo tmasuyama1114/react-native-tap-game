@@ -57,7 +57,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.instructions}>
-        Tap the {colorNames[correctAnswer.color]} button with the number {correctAnswer.number}!
+        Tap the <Text style={[styles.emphasize, { color: correctAnswer.color }]}>{colorNames[correctAnswer.color]}</Text> button with the number <Text style={styles.emphasize}>{correctAnswer.number}</Text>!
       </Text>
       <View style={styles.grid}>
         {options.map((option, index) => (
@@ -86,6 +86,11 @@ const styles = StyleSheet.create({
     fontSize: 24,
     marginBottom: 20,
     textAlign: 'center',
+    color: '#333', // 通常のテキストカラー
+  },
+  emphasize: {
+    fontWeight: 'bold',
+    fontSize: 26, // 強調するテキストのサイズを少し大きくします
   },
   grid: {
     width: '90%',
