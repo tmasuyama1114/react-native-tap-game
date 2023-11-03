@@ -25,25 +25,41 @@ export default function App() {
   // スコアの状態とそれを更新する関数をuseStateフックで作成する
   const [score, setScore] = useState(0);
 
+  // 新しい正解を生成する
+  const newCorrectAnswer = {
+    color: getRandomColor(),
+    number: getRandomNumber(),
+  };
+
   // ボタンが押されたときの処理をする関数
   const handlePress = (color, number) => {
+    // もし押されたボタンが正解なら
     if (color === correctAnswer.color && number === correctAnswer.number) {
       // スコアを1増やす
       setScore(prevScore => prevScore + 1);
-
       // 新しい正解を生成する
       const newCorrectAnswer = {
         color: getRandomColor(),
         number: getRandomNumber(),
       };
       setCorrectAnswer(newCorrectAnswer);
-
       // 新しいオプションを生成する
       setOptions(generateOptions(newCorrectAnswer));
     } else {
       // 正解でない場合はアラートを表示し、スコアを0に戻す
       Alert.alert("Wrong! Your score is " + score + ".\nTap OK to play again", null, [
-        { text: 'OK', onPress: () => setScore(0) },
+        {
+          text: 'OK',
+          onPress: () => {
+            setScore(0);
+            const newCorrectAnswer = {
+              color: getRandomColor(),
+              number: getRandomNumber(),
+            };
+            setCorrectAnswer(newCorrectAnswer);
+            setOptions(generateOptions(newCorrectAnswer));
+          }
+        },
       ]);
     }
   };
