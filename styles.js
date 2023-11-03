@@ -31,6 +31,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     marginBottom: 10,
     opacity: 0.9,
+    borderRadius: 15,
   },
   buttonText: {
     color: '#fff',
