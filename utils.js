@@ -9,9 +9,9 @@ export const getRandomNumber = () => Math.ceil(Math.random() * 9);
 
 // 色の名前と実際の値のマッピング
 export const colorNames = {
-  'rgba(255, 0, 0, 0.8)': 'red',
-  'rgba(0, 0, 255, 0.8)': 'blue',
-  'rgba(0, 128, 0, 0.8)': 'green',
+  'rgba(255, 0, 0, 0.8)': 'Red',
+  'rgba(0, 0, 255, 0.8)': 'Blue',
+  'rgba(0, 128, 0, 0.8)': 'Green',
 };
 
 // 正解のオプションを含むオプションの配列を返す関数

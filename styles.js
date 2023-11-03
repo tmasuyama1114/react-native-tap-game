@@ -8,14 +8,14 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
   },
   instructions: {
-    fontSize: 24,
+    fontSize: 20,
     marginBottom: 20,
     textAlign: 'center',
     color: '#333', // 通常のテキストカラー
   },
   emphasize: {
     fontWeight: 'bold',
-    fontSize: 26, // 強調するテキストのサイズを少し大きくします
+    fontSize: 32, // 強調するテキストのサイズを少し大きくします
   },
   grid: {
     width: '90%',

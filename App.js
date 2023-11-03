@@ -64,7 +64,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.instructions}>
-        Tap the <Text style={[styles.emphasize, { color: correctAnswer.color }]}>{colorNames[correctAnswer.color]}</Text> button with the number <Text style={styles.emphasize}>{correctAnswer.number}</Text>!
+        Tap the <Text style={styles.emphasize}>{colorNames[correctAnswer.color]}</Text> button with the number <Text style={styles.emphasize}>{correctAnswer.number}</Text>
       </Text>
       <View style={styles.grid}>
         {options.map((option, index) => (
