@@ -22,6 +22,8 @@ React Nativeを使用して開発されており、iOSとAndroid、Webで動作�
 - Node.jsがインストールされていること
 - npmがインストールされていること
 - Gitがインストールされていること
+- Xcodeがインストールされていること
+- Xcode Command Line Toolsがインストールされていること
 
 ### インストール手順
 
