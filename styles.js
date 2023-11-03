@@ -11,11 +11,11 @@ export default StyleSheet.create({
     fontSize: 20,
     marginBottom: 20,
     textAlign: 'center',
-    color: '#333', // 通常のテキストカラー
+    color: '#333',
   },
   emphasize: {
     fontWeight: 'bold',
-    fontSize: 32, // 強調するテキストのサイズを少し大きくします
+    fontSize: 32,
   },
   grid: {
     width: '90%',
@@ -24,9 +24,9 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
   },
   button: {
-    width: '30%', // Adjust the size of the button according to your design
-    height: '30%', // Change this to adjust the size of the button
-    aspectRatio: 1, // Keep the aspect ratio to 1 to make buttons square
+    width: '30%',
+    height: '30%',
+    aspectRatio: 1,
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 10,
