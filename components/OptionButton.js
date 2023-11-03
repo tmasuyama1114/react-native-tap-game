@@ -1,7 +1,7 @@
 import { Text, TouchableOpacity } from 'react-native';
 import styles from '../styles';
 
-// Button component
+// オプションボタンのコンポーネント
 const OptionButton = ({ option, onPress }) => (
   <TouchableOpacity
     style={[styles.button, { backgroundColor: option.color }]}

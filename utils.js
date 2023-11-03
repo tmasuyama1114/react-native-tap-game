@@ -16,6 +16,7 @@ export const colorNames = {
 
 // 正解のオプションを含むオプションの配列を返す関数
 export const generateOptions = (correctAnswer) => {
+  // 9個のオプションを生成する
   let options = new Array(9).fill(null).map(() => {
     return {
       color: getRandomColor(),
@@ -23,7 +24,7 @@ export const generateOptions = (correctAnswer) => {
     };
   });
 
-  // Ensure that the correct answer is included in the options
+  // 正解のオプションをランダムな場所に入れる
   const correctIndex = Math.floor(Math.random() * options.length);
   options[correctIndex] = correctAnswer;
 
