@@ -25,12 +25,6 @@ export default function App() {
   // スコアの状態とそれを更新する関数をuseStateフックで作成する
   const [score, setScore] = useState(0);
 
-  // 新しい正解を生成する
-  const newCorrectAnswer = {
-    color: getRandomColor(),
-    number: getRandomNumber(),
-  };
-
   // ボタンが押されたときの処理をする関数
   const handlePress = (color, number) => {
     // もし押されたボタンが正解なら
